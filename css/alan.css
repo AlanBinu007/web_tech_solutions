@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,300,500,600,700,900);
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #171A3D;
+    font-family: 'Lato', sans-serif;
+}
+
+.price h1 {
+    font-weight: 300;
+    color: #18C2C0;
+    letter-spacing: 2px;
+}
+
+.card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 520px;
+    height: 400px;
+}
+
+.card .row {
+    height: 20%;
+    width: 100%;
+    border-bottom: 1.2px solid #292C58;
+}
+
+.card .row:last-child {
+    border: none;
+}
+
+.card .paypal {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .details {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card .paypal, .card .credit {
+    background-color: #1E2148;
+}
+
+.card .cardholder, .card .number, .card .details {
+    background-color: #242852;
+}
+
+.paypal .left, .paypal .right, .credit .left, .credit .right {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.paypal .left, .credit .left {
+    float: left;
+    margin-left: 50px;
+}
+
+.paypal .left label, .credit .left label {
+    margin-left: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.paypal .left input[type=radio], .credit .left input[type=radio] {
+    visibility: hidden;
+}
+
+.paypal .left .radio, .credit .left .radio {
+    position: absolute;
+    top: -2px;
+    left: -20px;
+    border: 3px solid #414365;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #292B52;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.paypal .left .radio::before, .credit .left .radio::before {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    width: 9px;
+    height: 9px;
+    background-color: transparent;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.paypal .right, .credit .right {
+    float: right;
+    margin-right: 30px;
+}
+
+.paypal .right img, .credit .right img {
+    width: 42px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+input[type=radio]:checked ~ .radio {
+    border: 3px solid #90E1E3;
+    background-color: #18C2C0;
+}
+
+input[type=radio]:checked ~ .radio::before {
+    background-color: #fff;
+}
+
+.cardholder .info, .number .info {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 40px;
+}
+
+.cardholder .info label, .number .info label {
+    display: inline-block;
+    letter-spacing: 0.5px;
+    color: #8F92C3;
+    width: 100px;
+}
+
+.cardholder .info input, .number .info input {
+    display: inline-block;
+    max-width: 300px;
+    width: 300px;
+    background-color: transparent;
+    font-family: 'Source Code Pro';
+    border: none;
+    outline: none;
+    margin-left: 50px;
+    color: white;
+}
+
+.cardholder .info input::placeholder, .number .info input::placeholder {
+    font-family: 'Source Code Pro';
+    color: #444880;
+}
+
+#cardnumber, #cardnumber::placeholder {
+    letter-spacing: 2px;
+}
+
+.details .left, .details .right {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.details .left {
+    float: left;
+    padding-left: 40px;
+    width: 50%;
+}
+
+.details .left label {
+    letter-spacing: 0.5px;
+    color: #8F92C3;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.details .left select {
+    font-family: 'Source Code Pro';
+    cursor: pointer;
+    appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #444880;
+}
+
+.details .left span {
+    font-family: 'Source Code Pro';
+    color: #444880;
+    margin: 0 2px;
+}
+
+.details .right {
+    float: right;
+    width: 50%;
+}
+
+.details .right label {
+    margin-right: 20px;
+    color: #8F92C3;
+}
+
+.details .right input {
+    text-align: center;
+    width: 50px;
+    font-family: 'Source Code Pro';
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.details .right input::placeholder {
+    font-family: 'Source Code Pro';
+    color: #444880;
+}
+
+.details .right span {
+    text-align: center;
+    display: inline-block;
+    font-family: 'Source Code Pro';
+    cursor: pointer;
+    margin-left: 50px;
+    color: #18C2C0;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #18C2C0;
+    border-radius: 50%;
+}
+
+.button button {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 520px;
+    background-color: #18C2C0;
+    border: none;
+    color: #fff;
+    padding: 18px;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button button:hover {
+    background-color: #15aeac;
+}
+
+.button button:active {
+    background-color: #139b99;
+}
+
+.button button i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
