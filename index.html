@@ -2,625 +2,1443 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Web Tech Solutions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
+
+    <title>Web Tech Solutions</title>
     <meta content="" name="description" />
 
+    <meta content="" name="keywords" />
+
     <!-- Favicons -->
-    <link href="img/favicon.png" rel="icon" />
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
 
-    <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
 
-    <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-    <!-- Main Stylesheet File -->
-    <link href="css/style.css" rel="stylesheet" />
-
+    <!-- =======================================================
+  * Template Name: FlexStart - v1.4.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
   </head>
 
   <body>
-    <!--==========================
-  Header
-  ============================-->
-    <header id="header">
-      <div id="topbar">
-        <div class="container">
-          <div class="social-links">
-            <a
-              href="https://twitter.com/alanalanbinu"
-              class="twitter"
-              target="_blank"
-              ><i class="fa fa-twitter"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/alan.binu.142"
-              class="facebook"
-              target="_blank"
-              ><i class="fa fa-facebook"></i
-            ></a>
-            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-            <a
-              href="https://www.linkedin.com/company/74132530/admin/"
-              class="linkedin"
-              target="_blank"
-              ><i class="fa fa-linkedin"></i
-            ></a>
-          </div>
-        </div>
-      </div>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+      <div
+        class="
+          container-fluid container-xl
+          d-flex
+          align-items-center
+          justify-content-between
+        "
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/favicon.png" alt="" />
+          <span>Web Tech Solutions</span>
+        </a>
 
-      <div class="container">
-        <div class="logo float-left">
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <h1 class="text-light">
-            <a href="#intro" class="scrollto"
-              ><span>Web Tech Solutions</span></a
-            >
-          </h1>
-          <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
-        </div>
-
-        <nav class="main-nav float-right d-none d-lg-block">
+        <nav id="navbar" class="navbar">
           <ul>
-            <li class="active"><a href="#intro">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#footer">Contact Us</a></li>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
+            </li>
+
+            <li class="dropdown">
+              <a href="#"
+                ><span>Quick Buy</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Web Site</span> <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="pay.html">Basic Plan</a></li>
+                    <li><a href="payment.html">Regular Plan</a></li>
+                    <li><a href="paymentform.html">Premium Plan</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Software</span> <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="payform.html">Basic Plan</a></li>
+                    <li><a href="checkout.html">Regular Plan</a></li>
+                    <li><a href="checkoutform.html">Premium Plan</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Desktop Computer</span>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="form.html">Student System</a></li>
+                    <li><a href="filldetails.html">Business System</a></li>
+                    <li><a href="fillform.html">Gamming System</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
-        <!-- .main-nav -->
+        <!-- .navbar -->
       </div>
     </header>
-    <!-- #header -->
+    <!-- End Header -->
 
-    <!--==========================
-    Intro Section
-  ============================-->
-    <section id="intro" class="clearfix">
-      <div class="container d-flex h-100">
-        <div class="row justify-content-center align-self-center">
-          <div class="col-md-6 intro-info order-md-first order-last">
-            <h2>Rapid Solutions<br />for Your <span>Business!</span></h2>
-            <div>
-              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h1 data-aos="fade-up">
+              We offer modern solutions for growing your business
+            </h1>
+            <h2 data-aos="fade-up" data-aos-delay="400">
+              We are here to provide you Web Sites, Sofwares and whole Computer
+              Systems for your Business
+            </h2>
+            <div data-aos="fade-up" data-aos-delay="600">
+              <div class="text-center text-lg-start">
+                <a
+                  href="#about"
+                  class="
+                    btn-get-started
+                    scrollto
+                    d-inline-flex
+                    align-items-center
+                    justify-content-center
+                    align-self-center
+                  "
+                >
+                  <span>Get Started</span>
+                  <i class="bi bi-arrow-right"></i> </a
+                ><br /><br />
+                Click here to hear from us
+                <img src="assets/img/play.png" id="icon" />
+                <audio id="song">
+                  <source
+                    src="assets/img/webtechsolutions.mp3"
+                    type="audio/mp3"
+                  />
+                </audio>
+                <script>
+                  var mysong = document.getElementById("song");
+                  var icon = document.getElementById("icon");
+                  icon.onclick = function () {
+                    if (mysong.paused) {
+                      mysong.play();
+                      icon.src = "assets/img/pause.png";
+                    } else {
+                      mysong.pause();
+                      icon.src = "assets/img/play.png";
+                    }
+                    setTimeout(function () {
+                      icon.src = "assets/img/play.png";
+                    }, 35000);
+                  };
+                </script>
+              </div>
             </div>
           </div>
-
-          <div class="col-md-6 intro-img order-md-last order-first">
-            <img src="img/intro-img.svg" alt="" class="img-fluid" />
+          <div
+            class="col-lg-6 hero-img"
+            data-aos="zoom-out"
+            data-aos-delay="200"
+          >
+            <img src="assets/img/hero-img.png" class="img-fluid" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <!-- #intro -->
+    <!-- End Hero -->
 
     <main id="main">
-      <!--==========================
-      About Us Section
-    ============================-->
-      <section id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-5 col-md-6">
-              <div class="about-img">
-                <img src="img/about-img.jpeg" alt="" />
-              </div>
-            </div>
-
-            <div class="col-lg-7 col-md-6">
-              <div class="about-content">
-                <h2>About Us</h2>
-                <h3>
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row gx-0">
+            <div
+              class="col-lg-6 d-flex flex-column justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="content">
+                <h3>Who We Are</h3>
+                <h2>
                   We provide you the best Experience for your whole Business
-
-                </h3>
-                <p>Started in 2017</p>
+                </h2>
                 <p>
+                  Started in 2017<br />
                   We really focus on clients demand using cosy efficient way
                   along with 24*7 support.
-                </p>
-                <p>
-                  We also building your Business utility Software with database access and online payment
-                </p>
-                <p>
+                  <br />
+                  We are here to building your Business utility Software with
+                  database access and online payment
+                  <br />
                   Beside of web site we can build Desktop PCs for Gaming and
-                  business purposes as per clients demands
+                  business purposes as per clients demands<br />
+                  Domain : Hotels, Retails Shops, portfolio, Gold Loans and much
+                  more<br />
+                  Tech we are using : JAVA, MySQL, HTML, CSS, JS, PHP, JSP and
+                  many more
                 </p>
+                <div class="text-center text-lg-start"></div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 d-flex align-items-center"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+            >
+              <img src="assets/img/about.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Values Section ======= -->
+      <section id="values" class="values">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>Our Values</h2>
+            <p>Rather than love, than money, than fame, give me truth</p>
+          </header>
+
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="box" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/values-1.png" class="img-fluid" alt="" />
+                <h3>Best Price Value</h3>
+                <p>
+                  Best software and website that you can purchase at these price
+                  range.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/values-2.png" class="img-fluid" alt="" />
+                <h3>High End Perfomance</h3>
+                <p>
+                  We are providing only high end perfomance softwares and
+                  websites.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box" data-aos="fade-up" data-aos-delay="600">
+                <img src="assets/img/values-3.png" class="img-fluid" alt="" />
+                <h3>Deliver On Time</h3>
+                <p>
+                  We are here to deliver your product on time with much value
+                  and we are gere to help you out.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Values Section -->
+
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-emoji-smile"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="23"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Happy Clients</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-journal-richtext" style="color: #ee6c20"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="23"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Projects</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-headset" style="color: #15be56"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="1463"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Hours Of Support</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-people" style="color: #bb0852"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="1"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Hard Workers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
+      <!-- ======= Features Section ======= -->
+      <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>Features</h2>
+            <p>Nothing is impossible, the word itself says 'I'm possible'!</p>
+          </header>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="assets/img/features.png" class="img-fluid" alt="" />
+            </div>
+
+            <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+              <div class="row align-self-center gy-4">
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>Online Data Base Access</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>Instant Online Payment</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>24*7 Support</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>Customized Softwares</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>Animated Web Sites</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>Custom Build Computer</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- / row -->
+
+          <!-- Feature Tabs -->
+          <div class="row feture-tabs" data-aos="fade-up">
+            <div class="col-lg-6">
+              <h3>Our Products Main Features</h3>
+
+              <!-- Tabs -->
+              <ul class="nav nav-pills mb-3">
+                <li>
+                  <a class="nav-link active" data-bs-toggle="pill" href="#tab1"
+                    >Web Site</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" data-bs-toggle="pill" href="#tab2"
+                    >Software</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" data-bs-toggle="pill" href="#tab3"
+                    >Desktop Computers</a
+                  >
+                </li>
+              </ul>
+              <!-- End Tabs -->
+
+              <!-- Tab Content -->
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab1">
+                  <p>
+                    Custom animated with friendly usage UI. We also add contact
+                    form with live email sending technology for easy contact and
+                    we provide live location facility to your company and we can
+                    add more such features as client requirement
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Online Payment and Online Database</h4>
+                  </div>
+                  <p>
+                    We are integrating with some of the latest and trenting
+                    Online payment service providers, so that you can able to
+                    accept payment online and also able to store data securily
+                    in Cloud. So that you can access it from any where at any
+                    time.
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Hosting and free SSL Certificate</h4>
+                  </div>
+                  <p>
+                    We also provide the best domains such as Godaddy, Bluehost,
+                    Domain, ZNetLive etc... and can able to extend these
+                    requirement to next level as the client requirement and also
+                    providing free SSL for valuable clients
+                  </p>
+                </div>
+                <!-- End Tab 1 Content -->
+
+                <div class="tab-pane fade show" id="tab2">
+                  <p>
+                    Software for Retails, Gas Station, Textile and many more are
+                    available..
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Budget friendly Software</h4>
+                  </div>
+                  <p>
+                    We provide Custom designed software with your own
+                    requirement up to three users (User, Admin, Super
+                    Admin).Premium Plan include online database access, so that
+                    you never miss any of your valuable data. And it need to
+                    install in one host in a network and can able to access it
+                    from any system that have access to that network
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Free modification and Multi Stakeholders</h4>
+                  </div>
+                  <p>
+                    We are providing free modification for the first month. You
+                    can change anything without any cost. Over here we are
+                    capable o building upto 3 login users : Super Admin, Admin
+                    and the User
+                  </p>
+                </div>
+                <!-- End Tab 2 Content -->
+
+                <div class="tab-pane fade show" id="tab3">
+                  <p>
+                    Custom build Desktop Computers for Students, Business,
+                    Gamming and Video Editting
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Custom Designable</h4>
+                  </div>
+                  <p>
+                    We can uild your dream computer as your requirmrnt with cost
+                    efficient way. Each purchase above 50000 will awarded free
+                    UPS. Remote customiziable RGB lights are also available
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Warrenty Support and Hardware Reparing</h4>
+                  </div>
+                  <p>
+                    We are happy to give you one year Warrenty. We also repair
+                    any exisitng desktop computer with afordable price. And we
+                    also colaburate with Cable TV management for setting up FTTH
+                    connection. Unlimited internet pack start from 699 + Tax
+                  </p>
+                </div>
+                <!-- End Tab 3 Content -->
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <img src="assets/img/features-2.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <!-- End Feature Tabs -->
+        </div>
+      </section>
+      <!-- End Features Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>Services</h2>
+            <p>Services we are providing to our Customers</p>
+          </header>
+
+          <div class="row gy-4">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-box blue">
+                <i class="ri-discuss-line icon"></i>
+                <h3>Best warranty</h3>
+                <p>
+                  We provide free one month warranty for web sites and 2 month
+                  for software, you can contact us for any issues.Further
+                  modification may apply charges.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-box orange">
+                <i class="ri-discuss-line icon"></i>
+                <h3>Customized Software</h3>
+                <p>
+                  We provide you the best software. You can build your software
+                  with us with your own usages and purposes
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="service-box green">
+                <i class="ri-discuss-line icon"></i>
+                <h3>Hardware Support</h3>
+                <p>
+                  We provide support to our clients at any time at anywhere fro
+                  repairing, replacing hardware parts
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="service-box red">
+                <i class="ri-discuss-line icon"></i>
+                <h3>Perfomance</h3>
+                <p>
+                  We only provide the best technologies as our best to improve
+                  ll your performance
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="service-box purple">
+                <i class="ri-discuss-line icon"></i>
+                <h3>Online Payment Gateways</h3>
+                <p>
+                  We are also building online payment accept methods using
+                  Razerpay, Paytm along with database access
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
+              <div class="service-box pink">
+                <i class="ri-discuss-line icon"></i>
+                <h3>Proper Documentation</h3>
+                <p>
+                  Proper documentation for the easy usage of our software for
+                  further requirements
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Pricing Section ======= -->
+      <section id="pricing" class="pricing">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>Pricing</h2>
+            <p>Check our Pricing for WebSites</p>
+          </header>
+
+          <div class="row gy-4" data-aos="fade-left">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="box">
+                <h3 style="color: #07d5c0">Free Demo</h3>
+                <div class="price"><sup>₹</sup>0<span></span></div>
+                <img
+                  src="assets/img/pricing-free.png"
+                  class="img-fluid"
+                  alt=""
+                />
                 <ul>
+                  <li>Demo for Web Site</li>
+
+                  <li>Request Now and fill the form for getting a Demo</li>
                   <li>
-                    <i class="ion-android-checkmark-circle"></i> We are available for building website, Software with Online payment and Online Database Access
-                  </li>
-                  <li>
-                    <i class="ion-android-checkmark-circle"></i> Domain :
-                    Hotels, Retails Shop, portfolio and much more
-                  </li>
-                  <li>
-                    <i class="ion-android-checkmark-circle"></i> Tech we are
-                    using : JAVA, MySQL, HTML, CSS, JS, PHP, JSP and many more
+                    We are here to show you different template that best fit for
+                    your business
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- #about -->
-
-      <!--==========================
-      Services Section
-    ============================-->
-      <section id="services" class="section-bg">
-        <div class="container">
-          <header class="section-header">
-            <h3>Services</h3>
-            <p>beow are the services that provided by our company.</p>
-          </header>
-
-          <div class="row">
-            <div
-              class="col-md-6 col-lg-4 wow bounceInUp"
-              data-wow-duration="1.4s"
-            >
-              <div class="box">
-                <div class="icon" style="background: #fceef3">
-                  <i
-                    class="ion-ios-analytics-outline"
-                    style="color: #ff689b"
-                  ></i>
-                </div>
-                <h4 class="title">Best warranty</h4>
-                <p class="description">
-                  We provide free one month warranty for web sites and 2 month for software, you can contact us for any
-                  issues.Further modification may apply charges
-                </p>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4 wow bounceInUp"
-              data-wow-duration="1.4s"
-            >
-              <div class="box">
-                <div class="icon" style="background: #fff0da">
-                  <i
-                    class="ion-ios-bookmarks-outline"
-                    style="color: #e98e06"
-                  ></i>
-                </div>
-                <h4 class="title">Customized Software</h4>
-                <p class="description">
-                  We provide you the best software. You can build your software with us with your own usages and purposes
-                </p>
+                <a href="demo.html" class="btn-buy" target="_blank"
+                  >Request Demo</a
+                >
               </div>
             </div>
 
             <div
-              class="col-md-6 col-lg-4 wow bounceInUp"
-              data-wow-delay="0.1s"
-              data-wow-duration="1.4s"
+              class="col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="200"
             >
               <div class="box">
-                <div class="icon" style="background: #e6fdfc">
-                  <i class="ion-ios-paper-outline" style="color: #3fcdc7"></i>
-                </div>
-                <h4 class="title">Proper Documentation</h4>
-                <p class="description">
-                  Proper documentation for the easy usage of our software for further requirements
-                </p>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4 wow bounceInUp"
-              data-wow-delay="0.1s"
-              data-wow-duration="1.4s"
-            >
-              <div class="box">
-                <div class="icon" style="background: #eafde7">
-                  <i
-                    class="ion-ios-speedometer-outline"
-                    style="color: #41cf2e"
-                  ></i>
-                </div>
-                <h4 class="title">Perfomance</h4>
-                <p class="description">
-                  We only provide the best technologies as our best to improve ll your performance
-                </p>
+                <span class="featured">Featured</span>
+                <h3 style="color: #65c600">Basic Plan</h3>
+                <div class="price"><sup>₹</sup>4999*<span></span></div>
+                <img
+                  src="assets/img/pricing-starter.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul>
+                  <li>Static Web Page</li>
+                  <li>Limited Animations</li>
+                  <li>Basic Functions</li>
+                  <li class="na">Online Database</li>
+                  <li class="na">Online Payment</li>
+                </ul>
+                <a href="pay.html" class="btn-buy" target="_blank">Buy Now</a>
               </div>
             </div>
 
             <div
-              class="col-md-6 col-lg-4 wow bounceInUp"
-              data-wow-delay="0.2s"
-              data-wow-duration="1.4s"
+              class="col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="300"
             >
               <div class="box">
-                <div class="icon" style="background: #e1eeff">
-                  <i class="ion-ios-world-outline" style="color: #2282ff"></i>
-                </div>
-                <h4 class="title">Site Migration</h4>
-                <p class="description">
-                  We do miration process from one domain to another or any
-                  modification to the existing domain
-                </p>
+                <h3 style="color: #ff901c">Regular Plan</h3>
+                <div class="price"><sup>₹</sup>5999*<span></span></div>
+                <img
+                  src="assets/img/pricing-business.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul>
+                  <li>Static Web Page</li>
+                  <li>Basic Animations</li>
+                  <li>Medium Functions</li>
+                  <li>Online Database</li>
+                  <li class="na">Online Payment</li>
+                </ul>
+                <a href="payment.html" class="btn-buy" target="_blank"
+                  >Buy Now</a
+                >
               </div>
             </div>
+
             <div
-              class="col-md-6 col-lg-4 wow bounceInUp"
-              data-wow-delay="0.2s"
-              data-wow-duration="1.4s"
+              class="col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="400"
             >
               <div class="box">
-                <div class="icon" style="background: #ecebff">
-                  <i class="ion-ios-clock-outline" style="color: #8660fe"></i>
-                </div>
-                <h4 class="title">Hardware Support</h4>
-                <p class="description">
-                  We provide support to our clients at any time at anywhere fro repairing, replacing hardware parts
-                </p>
+                <span class="best">Best Value</span>
+                <h3 style="color: #ff0071">Premium Plan</h3>
+                <div class="price"><sup>₹</sup>7999*<span></span></div>
+                <img
+                  src="assets/img/pricing-ultimate.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul>
+                  <li>Dynamic Web Page</li>
+                  <li>Advanced Animations</li>
+                  <li>Free SSL Certificate</li>
+                  <li>Online Database</li>
+                  <li>Online Payment</li>
+                </ul>
+                <a href="paymentform.html" class="btn-buy" target="_blank"
+                  >Buy Now</a
+                >
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- #services -->
 
-      <
-      <!--==========================
-      Call To Action Section
-    ============================-->
-
-      <!--==========================
-      Features Section
-    ============================-->
-      <section id="features">
-        <div class="container">
-          <div class="row feature-item">
-            <div class="col-lg-6 wow fadeInUp">
-              <img src="img/features-1.svg" class="img-fluid" alt="" />
-            </div>
-            <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-              <h4>Our Web Site Features</h4>
-              <p>
-                Custom animated with friendly usage UI. We also add contact form
-                with live email sending technology for easy contact and we
-                provide live location facility to your company and we can add
-                more such features as client requirement
-              </p>
-              <p>
-                We also provide the best domains such as Godaddy, Bluehost,
-                Domain, ZNetLive etc... and can able to extend these requirement
-                to next level as the client requirement like online database
-                access, sun domain, bandwidth etc..
-              </p>
-            </div>
-          </div>
-
-          <div class="row feature-item mt-5 pt-5">
-            <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-              <img src="img/features-2.svg" class="img-fluid" alt="" />
-            </div>
-
-            <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-              <h4>Amazing support for all your problems and doubts</h4>
-              <p>
-                just need to give a miss call or send an SMS to +91-8111940551.
-                Even whatsapp message is also fine for us
-              </p>
-              <p>
-                We are also planning to extend our facility to create Mobile and Windows apps as well.
-              </p>
-            </div>
-          </div>
-          <br><br><br><br>
-          <div class="row feature-item">
-            <div class="col-lg-6 wow fadeInUp">
-              <img src="img/features-3.svg" class="img-fluid" alt="" />
-            </div>
-            <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-              <h4>Our Software and Hardware Features</h4>
-              <p>
-                We provide Custom designed software with your own requirement up to three users (User, Admin, Super Admin).Premium Plan include online database access, so that you never miss any of your valuable data. And it need to install in one host in a network and can able to access it from any system that have access to that network
-              </p>
-              <p>
-                The best computer system that you can build. We alo build custom specification system as per our client requirements. You can also choose your monitor size, keyboard whether it have RGB light or not as your wish And also we are take care of setting up FTTH internet connection  collaboration with BSNL, Asianet and Kerala Vision
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- #about -->
-
-      <!--==========================
-      Clients Section
-    ============================-->
-
-      <!-- <section id="clients" class="wow fadeInUp">
-        <div class="container">
-          <header class="section-header">
-            <h3>Our Clients</h3>
-          </header>
-
-          <div class="owl-carousel clients-carousel">
-            <img src="img/clients/client-1.png" alt="" />
-            <img src="img/clients/client-2.png" alt="" />
-            <img src="img/clients/client-3.png" alt="" />
-            <img src="img/clients/client-4.png" alt="" />
-            <img src="img/clients/client-5.png" alt="" />
-            <img src="img/clients/client-6.png" alt="" />
-            <img src="img/clients/client-7.png" alt="" />
-            <img src="img/clients/client-8.png" alt="" />
-          </div>
-        </div>
-      </section> -->
-      <!-- #clients -->
-
-      <!--==========================
-      Pricing Section
-    ============================-->
-      <section id="pricing" class="wow fadeInUp section-bg">
-        <div class="container">
-          <header class="section-header">
-            <h3>Pricing</h3>
-            <p>Below are the price description for websites</p>
-          </header>
-
-          <div class="row flex-items-xs-middle flex-items-xs-center">
-            <!-- Basic Plan  -->
-            <div class="col-xs-12 col-lg-4">
-              <div class="card">
-                <div class="card-header">
-                  <h3>
-                    <span class="currency">₹</span>4999<span class="period"
-                      >/per web site</span
-                    >
-                  </h3>
-                </div>
-                <div class="card-block">
-                  <h4 class="card-title">Basic Plan</h4>
-                  <ul class="list-group">
-                    <li class="list-group-item">Basic Functions</li>
-                    <li class="list-group-item">Fixed Domain</li>
-                    <li class="list-group-item">Low bandwith</li>
-                    <li class="list-group-item">low Storage Space</li>
-                    <li class="list-group-item">Medium Animations</li>
-                  </ul>
-                  <a href="pay.html" class="btn" target="_blank">Buy Now</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Regular Plan  -->
-            <div class="col-xs-12 col-lg-4">
-              <div class="card">
-                <div class="card-header">
-                  <h3>
-                    <span class="currency">₹</span>5999<span class="period"
-                      >/per web site</span
-                    >
-                  </h3>
-                </div>
-                <div class="card-block">
-                  <h4 class="card-title">Regular Plan</h4>
-                  <ul class="list-group">
-                    <li class="list-group-item">Medium Functions</li>
-                    <li class="list-group-item">Custom Domain</li>
-                    <li class="list-group-item">Limited bandwith</li>
-                    <li class="list-group-item">Limited Storage Space</li>
-                    <li class="list-group-item">24*7 Support</li>
-                  </ul>
-                  <a href="pay1.html" class="btn" target="_blank">Buy Now</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Premium Plan  -->
-            <div class="col-xs-12 col-lg-4">
-              <div class="card">
-                <div class="card-header">
-                  <h3>
-                    <span class="currency">₹</span>7999<span class="period"
-                      >/per web site</span
-                    >
-                  </h3>
-                </div>
-                <div class="card-block">
-                  <h4 class="card-title">Premium Plan</h4>
-                  <ul class="list-group">
-                    <li class="list-group-item">Free SSL Certificate</li>
-                    <li class="list-group-item">Custom Domain</li>
-                    <li class="list-group-item">Good bandwith</li>
-                    <li class="list-group-item">Good Storage Space</li>
-                    <li class="list-group-item">24*7 Support</li>
-                  </ul>
-                  <a href="pay3.html" class="btn" target="_blank">Buy Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <section id="pricing" class="wow fadeInUp section-bg">
-
-        <div class="container">
-          <header class="section-header">
-
-            <p>Below are the price description for Software</p>
-          </header>
           <center>
-          <div class="row flex-items-xs-middle flex-items-xs-center">
+            *Note : Price with exclude Domain registration cost and Host
+            purchasing cost
+          </center>
+        </div>
 
-            <div class="col-xs-12 col-lg-4">
-              <div class="card">
-                <div class="card-header">
-                  <h3>
-                    <span class="currency">₹</span>6999<span class="period"
-                  >/per software</span
-                  >
-                  </h3>
-                </div>
-                <div class="card-block">
-                  <h4 class="card-title">Basic Software</h4>
-                  <ul class="list-group">
-                    <li class="list-group-item">Single Login User</li>
-                    <li class="list-group-item">Available only in Web</li>
-                    <li class="list-group-item">Data Encryption</li>
-                    <li class="list-group-item">Email Notification Facility</li>
-                    <li class="list-group-item">Limited Modification-Apply Charge</li>
-                  </ul>
-                  <a href="pay4.html" class="btn" target="_blank">Buy Now</a>
-                </div>
-              </div>
-            </div>
-            <!-- Basic Plan  -->
-            <div class="col-xs-12 col-lg-4">
-              <div class="card">
-                <div class="card-header">
-                  <h3>
-                    <span class="currency">₹</span>8999<span class="period"
-                  >/per software</span
-                  >
-                  </h3>
-                </div>
-                <div class="card-block">
-                  <h4 class="card-title">Regular Software</h4>
-                  <ul class="list-group">
-                    <li class="list-group-item">2 Logins(User,Admin)</li>
-                    <li class="list-group-item">Available in Web and Windows </li>
-                    <li class="list-group-item">Data Encryption</li>
-                    <li class="list-group-item">Email Notification Facility</li>
-                    <li class="list-group-item">Limited Modification-Apply Charge</li>
-                  </ul>
-                  <a href="pay5.html" class="btn" target="_blank">Buy Now</a>
-                </div>
+        <br /><br /><br />
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <p>Check our Pricing for Softwares</p>
+          </header>
+
+          <div class="row gy-4" data-aos="fade-left">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="box">
+                <h3 style="color: #07d5c0">Free Demo</h3>
+                <div class="price"><sup>₹</sup>0<span></span></div>
+                <img
+                  src="assets/img/pricing-free.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul>
+                  <li>Demo for Software</li>
+
+                  <li>
+                    Request Now and fill the form with your full requirment for
+                    getting a Demo
+                  </li>
+                  <li>
+                    We are here to show you a free demo that best fit for your
+                    business
+                  </li>
+                </ul>
+                <a href="demo.html" class="btn-buy" target="_blank"
+                  >Request Demo</a
+                >
               </div>
             </div>
 
-            <!-- Premium Plan  -->
-            <div class="col-xs-12 col-lg-4">
-              <div class="card">
-                <div class="card-header">
-                  <h3>
-                    <span class="currency">₹</span>14999<span class="period"
-                  >/per software</span
-                  >
-                  </h3>
-                </div>
-                <div class="card-block">
-                  <h4 class="card-title">Premium Software</h4>
-                  <ul class="list-group">
-                    <li class="list-group-item">3 Logins(User,Admin,Super Admin)</li>
-                    <li class="list-group-item">Available in Web, Mobile and Windows </li>
-                    <li class="list-group-item">Data Encryption with Online Database Storage</li>
-                    <li class="list-group-item">Email and SMS Notification Facility</li>
-                    <li class="list-group-item">Modification-Apply Charge</li>
-                  </ul>
-                  <a href="pay6.html" class="btn" target="_blank">Buy Now</a>
-                </div>
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="box">
+                <span class="featured">Featured</span>
+                <h3 style="color: #65c600">Basic Plan</h3>
+                <div class="price"><sup>₹</sup>6999*<span></span></div>
+                <img
+                  src="assets/img/pricing-starter.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul>
+                  <li>Single Login User</li>
+                  <li>Basic Functions</li>
+                  <li>Data Encryption</li>
+                  <li>Local Database</li>
+                  <li class="na">Online Database</li>
+                  <li class="na">Online Payment</li>
+                </ul>
+                <a href="payform.html" class="btn-buy" target="_blank"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="box">
+                <h3 style="color: #ff901c">Regular Plan</h3>
+                <div class="price"><sup>₹</sup>8999*<span></span></div>
+                <img
+                  src="assets/img/pricing-business.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul>
+                  <li>2 Logins(User,Admin)</li>
+                  <li>Email Notification Facility</li>
+                  <li>Data Encryption</li>
+                  <li>Local Database</li>
+                  <li class="na">Online Database</li>
+                  <li class="na">Online Payment</li>
+                </ul>
+                <a href="checkout.html" class="btn-buy" target="_blank"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="box">
+                <span class="best">Best Value</span>
+                <h3 style="color: #ff0071">Premium Plan</h3>
+                <div class="price"><sup>₹</sup>14999*<span></span></div>
+                <img
+                  src="assets/img/pricing-ultimate.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul>
+                  <li>3 Logins(User,Admin,Super Admin)</li>
+                  <li>Email Notification Facility</li>
+                  <li>Data Encryption</li>
+                  <li>Local and Online Database</li>
+                  <li>Online Database</li>
+                  <li>SMS Facility</li>
+                </ul>
+                <a href="checkoutform.html" class="btn-buy" target="_blank"
+                  >Buy Now</a
+                >
               </div>
             </div>
           </div>
+
+          <center>
+            *Note : Price increases upon your demant and modification
+          </center>
+        </div>
+        <br /><br /><br />
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <p>Check our Pricing for Desktop Computer</p>
+          </header>
+
+          <div class="row gy-4" data-aos="fade-left">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="box">
+                <h3 style="color: #07d5c0">Free Demo</h3>
+                <div class="price"><sup>₹</sup>0<span></span></div>
+                <img
+                  src="assets/img/pricing-free.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul>
+                  <li>Price Discussion for Computer</li>
+
+                  <li>
+                    Request Now and fill the form with your required computer
+                    Spec
+                  </li>
+                  <li>
+                    We are here to provide you the best price range Computer
+                    Systems
+                  </li>
+                  <li>We are also repairing the existing systems</li>
+                </ul>
+                <a href="demopc.html" class="btn-buy" target="_blank"
+                  >Request Demo</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="box">
+                <h3 style="color: #65c600">Student Plan</h3>
+                <div class="price"><sup>₹</sup>35000*<span></span></div>
+                <img
+                  src="assets/img/pricing-starter.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul>
+                  <li>Core i3</li>
+                  <li>8GB Ram</li>
+
+                  <li>500GB HDD</li>
+                  <li>Accessories : Acer</li>
+                  <li>Free pre installed usefull softwares</li>
+                  <li>1 Year Warranty</li>
+                </ul>
+                <a href="form.html" class="btn-buy" target="_blank">Buy Now</a>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="box">
+                <span class="featured">Featured</span>
+                <h3 style="color: #ff901c">Business/Developer</h3>
+                <div class="price"><sup>₹</sup>45000*<span></span></div>
+                <img
+                  src="assets/img/pricing-business.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul>
+                  <li>Core i5</li>
+                  <li>8GB Ram</li>
+                  <li>128GB SSD + .5TB HDD</li>
+                  <li>2GB Graphics Card</li>
+                  <li>Accessories : Acer</li>
+                  <li>1 Year Warrenty</li>
+                </ul>
+                <a href="filldetails.html" class="btn-buy" target="_blank"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="box">
+                <h3 style="color: #ff0071">Gaming and Video Editing</h3>
+                <div class="price"><sup>₹</sup>69999*<span></span></div>
+                <img
+                  src="assets/img/pricing-ultimate.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul>
+                  <li>Core i7</li>
+                  <li>16GB Ram</li>
+                  <li>256GB SSD + 1TB HDD</li>
+                  <li>GTX 1050Ti Graphics Card</li>
+                  <li>Accessories : Acer</li>
+                  <li>1 Year Warrenty + Free UPS</li>
+                </ul>
+                <a href="fillform.html" class="btn-buy" target="_blank"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <center>
+            *Note : Additional charges for Wifi, Bluetooth Adapter, Web Cam,
+            printers etc..
           </center>
         </div>
       </section>
-      <!-- #pricing -->
+      <!-- End Pricing Section -->
 
-
-
-      <section id="pricing" class="wow fadeInUp section-bg">
-
-        <div class="container">
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
           <header class="section-header">
-
-            <p>Below are the price description for Desktop Computer Assembly</p>
+            <h2>Portfolio</h2>
+            <p>Check our latest work</p>
           </header>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-card">Card</li>
+                <li data-filter=".filter-web">Web</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="row gy-4 portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-1.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-1.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfokio-lightbox"
+                      title="App 1"
+                      ><i class="bi bi-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bi bi-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-2.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Web 3</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-2.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfokio-lightbox"
+                      title="Web 3"
+                      ><i class="bi bi-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bi bi-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-3.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfokio-lightbox"
+                      title="App 2"
+                      ><i class="bi bi-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bi bi-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-4.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Card 2</h4>
+                  <p>Card</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-4.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfokio-lightbox"
+                      title="Card 2"
+                      ><i class="bi bi-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bi bi-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-5.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Web 2</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-5.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfokio-lightbox"
+                      title="Web 2"
+                      ><i class="bi bi-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bi bi-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-6.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-6.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfokio-lightbox"
+                      title="App 3"
+                      ><i class="bi bi-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bi bi-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-7.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Card 1</h4>
+                  <p>Card</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-7.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfokio-lightbox"
+                      title="Card 1"
+                      ><i class="bi bi-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bi bi-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-8.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Card 3</h4>
+                  <p>Card</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-8.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfokio-lightbox"
+                      title="Card 3"
+                      ><i class="bi bi-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bi bi-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/portfolio-9.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Web 3</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-9.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfokio-lightbox"
+                      title="Web 3"
+                      ><i class="bi bi-plus"></i
+                    ></a>
+                    <a href="portfolio-details.html" title="More Details"
+                      ><i class="bi bi-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>some of our client's Testimonials</h2>
+            <p>What they are saying about us</p>
+          </header>
+
+          <div
+            class="testimonials-slider swiper-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Really appriciate for your hardwok and the work is so also
+                    amazing. I really love that. The best part is that i
+                    intrested is because of your are a full-time student. Best
+                    of luck for your future.
+                  </p>
+
+                  <h3>Manu Shajan</h3>
+                  <h4>Manager of Woodies Homes</h4>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Good work Alan. After using your billing software everthing
+                    is going great. And we also can able to increase the
+                    productivity. The hard work is also decreased. Thanks Alan
+                  </p>
+
+                  <h3>Tony Jose</h3>
+                  <h4>Billing Assistant at Samruthi Stores</h4>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    By the time of Lock Down, it is very hard to accept payments
+                    in temple. Then by the help of Alan we build a website which
+                    accepting payments via online. Really helpfull at these
+                    sitivation
+                  </p>
+
+                  <h3>Krishnakutty Menon</h3>
+                  <h4>Co-ordinator of Vijayalekshimi Temple</h4>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    I am also a client of Alan. I buy a Regular plan website for
+                    my Hotel to getting reservation via online. It worth for
+                    money. Really recommended. I definity give 5 start ratting
+                  </p>
+
+                  <h3>Saju Puthempurakkal</h3>
+                  <h4>Owner of Puthempurakkal Hotel Rooms</h4>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    When i was a student in my college i actiially looking for a
+                    intership. For this and my future purposes Alan help me to
+                    create a wounderfull Protfolio that impress recruiters.
+                    Currently i am interning in Tech Mahindra
+                  </p>
+
+                  <h3>Ajmal Khan</h3>
+                  <h4>Student</h4>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section -->
+
+      <!-- ======= Team Section ======= -->
+      <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>About Alan</h2>
+            <p>Who is Alan</p>
+          </header>
+
           <center>
-            <div class="row flex-items-xs-middle flex-items-xs-center">
-
-              <div class="col-xs-12 col-lg-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h3>
-                      <span class="currency">₹</span>35000<span class="period"
-                    ></span
-                    >
-                    </h3>
+            <div>
+              <div
+                class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div class="member">
+                  <div class="member-img">
+                    <img
+                      src="assets/img/team/team-4.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
                   </div>
-                  <div class="card-block">
-                    <h4 class="card-title">Student</h4>
-                    <ul class="list-group">
-                      <li class="list-group-item">Core i3</li>
-                      <li class="list-group-item">8GB Ram</li>
-                      <li class="list-group-item">128GB SSD + 500GB HDD</li>
-                      <li class="list-group-item">Graphics Card (Optional)</li>
-                      <li class="list-group-item">Accessories : Acer</li>
-                      <li class="list-group-item">1 Year Warranty</li>
-                    </ul>
-                    <a href="pay7.html" class="btn" target="_blank">Buy Now</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Basic Plan  -->
-              <div class="col-xs-12 col-lg-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h3>
-                      <span class="currency">₹</span>45000<span class="period"
-                    ></span
-                    >
-                    </h3>
-                  </div>
-                  <div class="card-block">
-                    <h4 class="card-title">Business/Developer </h4>
-                    <ul class="list-group">
-                      <li class="list-group-item">Core i5</li>
-                      <li class="list-group-item">16GB Ram</li>
-                      <li class="list-group-item">128GB SSD + 1TB HDD + 500GB External</li>
-                      <li class="list-group-item">Graphics Card (Optional)</li>
-                      <li class="list-group-item">Accessories : Acer</li>
-                      <li class="list-group-item">1 Year Warrenty</li>
-                    </ul>
-                    <a href="pay8.html" class="btn" target="_blank">Buy Now</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Premium Plan  -->
-              <div class="col-xs-12 col-lg-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h3>
-                      <span class="currency">₹</span>69999<span class="period"
-                    ></span
-                    >
-                    </h3>
-                  </div>
-                  <div class="card-block">
-                    <h4 class="card-title">Gaming and Video Editing</h4>
-                    <ul class="list-group">
-                      <li class="list-group-item">Core i7</li>
-                      <li class="list-group-item">32GB Ram</li>
-                      <li class="list-group-item">256GB SSD + 2TB HDD</li>
-                      <li class="list-group-item">GTX 1050Ti Graphics Card</li>
-                      <li class="list-group-item">Accessories : Acer</li>
-                      <li class="list-group-item">1 Year Warranty</li>
-                    </ul>
-                    <a href="pay9.html" class="btn" target="_blank">Buy Now</a>
+                  <div class="member-info">
+                    <h4>Alan Binu</h4>
+                    <span>CEO & Co-Founder</span>
+                    <p>
+                      Rerum voluptate non adipisci animi distinctio et deserunt
+                      amet voluptas. Quia aut aliquid doloremque ut possimus
+                      ipsum officia.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -628,323 +1446,450 @@
           </center>
         </div>
       </section>
+      <!-- End Team Section -->
 
-      <!--==========================
-      Frequently Asked Questions Section
-    ============================-->
-      <section id="faq">
-        <div class="container">
+      <!-- ======= Clients Section ======= -->
+      <section id="clients" class="clients">
+        <div class="container" data-aos="fade-up">
           <header class="section-header">
-            <h3>Frequently Asked Questions</h3>
-            <p>
-              Below are the frequently asked question and answer, Please find
-              your answer from below. If you are not satisfied plese email me
-              using the below contact form
-            </p>
+            <h2>Our Clients</h2>
+            <p>Temporibus omnis officia</p>
           </header>
 
-          <ul id="faq-list" class="wow fadeInUp">
-            <li>
-              <a data-toggle="collapse" class="collapsed" href="#faq1"
-                >How should i contact you? <i class="ion-android-remove"></i
-              ></a>
-              <div id="faq1" class="collapse" data-parent="#faq-list">
-                <p>
-                  You can call or send message to +91-8111940551 or submit the
-                  below email form
-                </p>
+          <div class="clients-slider swiper-container">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-1.png"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
-            </li>
-            <li>
-              <a data-toggle="collapse" class="collapsed" href="#faq1"
-              >Can i able to customize the PC? <i class="ion-android-remove"></i
-              ></a>
-              <div id="faq1" class="collapse" data-parent="#faq-list">
-                <p>
-                  Sure, You can?
-                </p>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-2.png"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
-            </li>
-            <li>
-            <li>
-              <a data-toggle="collapse" class="collapsed" href="#faq1"
-              >what happened if my warranty date expire? <i class="ion-android-remove"></i
-              ></a>
-              <div id="faq1" class="collapse" data-parent="#faq-list">
-                <p>
-                  You can still contact me but charges may apply
-                </p>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-3.png"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
-            </li>
-              <a data-toggle="collapse" href="#faq2" class="collapsed"
-                >Is it possible to get a demo of the projects?
-                <i class="ion-android-remove"></i
-              ></a>
-              <div id="faq2" class="collapse" data-parent="#faq-list">
-                <p>
-                  Yes. For demo purposes just choose purpose to demo in contact
-                  form and submit the form. We will contact you as soon as
-                  possible.
-                </p>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-4.png"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
-            </li>
-
-            <li>
-              <a data-toggle="collapse" href="#faq2" class="collapsed"
-                >What if my domain experied? <i class="ion-android-remove"></i
-              ></a>
-              <div id="faq2" class="collapse" data-parent="#faq-list">
-                <p>
-                  You can just renwal it for just buy a new domain as you wish
-                  contact me for support
-                </p>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-5.png"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
-            </li>
-
-            <li>
-              <a data-toggle="collapse" href="#faq3" class="collapsed"
-                >What if i need to add some other feature to my existing
-                website. Is it possible? <i class="ion-android-remove"></i
-              ></a>
-              <div id="faq3" class="collapse" data-parent="#faq-list">
-                <p>
-                  Yes. It is possible. But you must have the username and
-                  password of your existing domain account.
-                </p>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-6.png"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
-            </li>
-
-            <li>
-              <a data-toggle="collapse" href="#faq4" class="collapsed"
-                >If i not need your web site after purchasing it. Can i able to
-                return it to you? <i class="ion-android-remove"></i
-              ></a>
-              <div id="faq4" class="collapse" data-parent="#faq-list">
-                <p>
-                  yes, You can. But you are only awarded 60% of total cost as
-                  refund.
-                </p>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-7.png"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
-            </li>
-
-            <li>
-              <a data-toggle="collapse" href="#faq5" class="collapsed"
-                >After send the mail and you are not responding what should we
-                need to do?<i class="ion-android-remove"></i
-              ></a>
-              <div id="faq5" class="collapse" data-parent="#faq-list">
-                <p>Just call me or send a whatsapp message as well.</p>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-8.png"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
-            </li>
-
-            <li>
-              <a data-toggle="collapse" href="#faq6" class="collapsed"
-                >What is the charge of modification after one month?
-                <i class="ion-android-remove"></i
-              ></a>
-              <div id="faq6" class="collapse" data-parent="#faq-list">
-                <p>
-                  It depends upon the work that u need. Probabily if the work is
-                  small the cost will be small and vise vers
-                </p>
-              </div>
-            </li>
-          </ul>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
-      <!-- #faq -->
-    </main>
+      <!-- End Clients Section -->
 
-    <!--==========================
-    Footer
-  ============================-->
-    <footer id="footer" class="section-bg">
-      <div class="footer-top">
-        <div class="container">
+      <!-- ======= F.A.Q Section ======= -->
+      <section id="faq" class="faq">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>F.A.Q</h2>
+            <p>Frequently Asked Questions</p>
+          </header>
+
           <div class="row">
             <div class="col-lg-6">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="footer-info">
-                    <h3>Web Tech Solutions</h3>
-                    <p>
-                      Beside of web site we can build Desktop PCs as per clients
-                      demands. Best trust full and thanks all of our clients
-                    </p>
-                  </div>
-
-                  <div class="footer-newsletter">
-                    <h4>Our Newsletter</h4>
-                    <p>Enter your email for more daily updates</p>
-                    <form onsubmit="sub()">
-                      <input type="email" name="email" required /><input
-                        type="submit"
-                        value="Subscribe"
-                      />
-                    </form>
+              <!-- F.A.Q List 1-->
+              <div class="accordion accordion-flush" id="faqlist1">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-1"
+                    >
+                      what happened if my warranty date expire?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-content-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist1"
+                  >
+                    <div class="accordion-body">
+                      You can still contact me but charges may apply.
+                    </div>
                   </div>
                 </div>
 
-                <div class="col-sm-6">
-                  <div class="footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                      <li><a href="#intro">Home</a></li>
-                      <li><a href="#about">About us</a></li>
-                      <li><a href="#services">Services</a></li>
-                      <li><a href="#pricing">Pricing</a></li>
-                    </ul>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-2"
+                    >
+                      What if my domain experied?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-content-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist1"
+                  >
+                    <div class="accordion-body">
+                      You can just renwal it for just buy a new domain as you
+                      wish contact me for support.
+                    </div>
                   </div>
+                </div>
 
-                  <div class="footer-links">
-                    <h4>Contact Us</h4>
-                    <p>
-                      Edavetty <br />
-                      Thodupuzha 685588 <br />
-                      Idukki, Kerala<br />
-                      India <br />
-                      <strong>Phone:</strong> +91 8111940551<br />
-                      <strong>Email:</strong> alanbinu5@gmail.com<br />
-                    </p>
-                  </div>
-
-                  <div class="social-links">
-                    <a href="https://twitter.com/alanalanbinu" class="twitter"
-                      ><i class="fa fa-twitter" target="_blank"></i
-                    ></a>
-                    <a
-                      href="https://www.facebook.com/alan.binu.142"
-                      class="facebook"
-                      ><i class="fa fa-facebook" target="_blank"></i
-                    ></a>
-                    <a href="#" class="instagram"
-                      ><i class="fa fa-instagram"></i
-                    ></a>
-                    <a
-                      href="https://www.linkedin.com/company/74132530/admin/"
-                      class="linkedin"
-                      target="_blank"
-                      ><i class="fa fa-linkedin"></i
-                    ></a>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-3"
+                    >
+                      What if i need to add some other feature to my existing
+                      website. Is it possible?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-content-3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist1"
+                  >
+                    <div class="accordion-body">
+                      Yes. It is possible. But you must have the username and
+                      password of your existing domain account.
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-6">
-              <div class="form">
-                <h4>Send us a message</h4>
-                <p>Happy to hear from you all.</p>
-                <form class="contactForm" onSubmit="sendEmail()">
-                  <div class="form-group">
+              <!-- F.A.Q List 2-->
+              <div class="accordion accordion-flush" id="faqlist2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2-content-1"
+                    >
+                      If i not need your web site after purchasing it. Can i
+                      able to return it to you?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2-content-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist2"
+                  >
+                    <div class="accordion-body">
+                      yes, You can. But you are only awarded 50% of total cost
+                      as refund.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2-content-2"
+                    >
+                      After send the mail and you are not responding what should
+                      we need to do?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2-content-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist2"
+                  >
+                    <div class="accordion-body">
+                      Just call me or send a whatsapp message as well.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2-content-3"
+                    >
+                      What is the charge of modification after one month?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2-content-3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist2"
+                  >
+                    <div class="accordion-body">
+                      It depends upon the work that you need. Probabily if the
+                      work is small the cost will be small and vise versa.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End F.A.Q Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>Contact</h2>
+            <p>Contact Us</p>
+          </header>
+
+          <div class="row gy-4">
+            <div class="col-lg-6">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Address</h3>
+                    <p>Edavetty Street,<br />Idukki, 685588</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="bi bi-telephone"></i>
+                    <h3>Call Us</h3>
+                    <p>+91 8111940551<br /></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="bi bi-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>alanbinu5@gmail.com<br />iamalanbinu@gmail.com</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="bi bi-clock"></i>
+                    <h3>Open Hours</h3>
+                    <p>
+                      Monday - Friday <br />7:00AM - 09:00PM<br />5:00AM -
+                      8:00PM
+                    </p>
+                    <p>Saturday - Sunday 7:00AM - 8:00PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <form
+                action="forms/contact.php"
+                method="post"
+                class="php-email-form"
+              >
+                <div class="row gy-4">
+                  <div class="col-md-6">
                     <input
                       type="text"
                       name="name"
                       class="form-control"
-                      id="name"
                       placeholder="Your Name"
                       required
                     />
-                    <div class="validation"></div>
                   </div>
-                  <div class="form-group">
+
+                  <div class="col-md-6">
                     <input
                       type="email"
                       class="form-control"
                       name="email"
-                      id="email"
                       placeholder="Your Email"
-                      data-rule="email"
-                      data-msg="Please enter a valid email"
                       required
                     />
-                    <div class="validation"></div>
                   </div>
-                  <div class="form-group">
+
+                  <div class="col-md-12">
                     <input
                       type="text"
                       class="form-control"
-                      name="phone"
-                      id="phone "
-                      placeholder="Phone Number"
+                      name="subject"
+                      placeholder="Subject"
                       required
-                      pattern="[0-9]{10}"
                     />
-                    <div class="validation"></div>
                   </div>
-                  <div class="form-group">
-                    <select
-                      name="purpose"
-                      id="purpose"
-                      class="form-control"
-                      required
-                      onchange="option(this.value)"
-                    >
 
-                      <option value="Demo">For Demo Purposes</option>
-                      <option value="Query">For Some Queries</option>
-                  
-                    </select>
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                    
-
-                    <select
-                            name="Pricing"
-                            id="Pricing"
-                            class="form-control"
-                            required
-                            onchange=option1(this.value)
-
-                    >
-                      <option value="soft">Software</option>
-                    <option value="web">Web Site</option>
-                      <option value="com">Computer System</option>
-                    </select>
-                    <br>
-
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
+                  <div class="col-md-12">
                     <textarea
                       class="form-control"
                       name="message"
-                      id="message"
-                      rows="5"
-                      data-rule="required"
-                      data-msg="Please write something for us"
-                      placeholder="Enter your all requirements"
+                      rows="6"
+                      placeholder="Message"
                       required
                     ></textarea>
-                    <div class="validation"></div>
                   </div>
 
-                  <div id="sendmessage">
-                    Your message has been sent. Thank you!
-                  </div>
-                  <div id="errormessage"></div>
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
 
-                  <div class="text-center">
-                    <button
-                      id="submit"
-                      type="submit"
-                      title="Send Message"
-                      class="btn btn-primary"
-                    >
-                      Send Message
-                    </button>
-                    <button
-                      id="submit"
-                      type="reset"
-                      title="Send Message"
-                      class="btn btn-danger"
-                    >
-                      Reset
-                    </button>
+                    <button type="submit">Send Message</button>
                   </div>
-                </form>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+
+    <footer id="footer" class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/favicon.png" alt="" />
+                <span>Web Tech Solutions</span>
+              </a>
+              <p>
+                We are here to help to boost your business to the next level.
+                Best trust full and thanks all of our clients.
+              </p>
+              <div class="social-links mt-3">
+                <a
+                  href="https://twitter.com/alanalanbinu"
+                  class="twitter"
+                  target="_blank"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/alan.binu.142"
+                  class="facebook"
+                  target="_blank"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+
+                <a
+                  href="https://www.linkedin.com/company/74132530/"
+                  class="linkedin"
+                  target="_blank"
+                  ><i class="bi bi-linkedin bx bxl-linkedin"></i
+                ></a>
               </div>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a
+                    href="https://www.termsfeed.com/live/85540e5f-ff9b-4f1c-b2f1-1a0b6d337e1e"
+                    target="_blank"
+                    >Terms & Conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  Web Development
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  Software Development
+                </li>
+                <li><i class="bi bi-chevron-right"></i> System Assembling</li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  System Reparing
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="
+                col-lg-3 col-md-12
+                footer-contact
+                text-center text-md-start
+              "
+            >
+              <h4>Contact Us</h4>
+              <p>
+                Edavetty Street <br />
+                Thodupuzha, NY 535022<br />
+                Idukki <br /><br />
+                <strong>Phone:</strong> +91 8111940551<br />
+                <strong>Email:</strong> alanbinu5@gmail.com<br />
+              </p>
             </div>
           </div>
         </div>
@@ -952,79 +1897,46 @@
 
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong>Web Tech Solutions</strong>. All Rights
-          Reserved
+          &copy; Copyright <strong><span>Web Tech Solutions</span></strong
+          >. All Rights Reserved
         </div>
         <div class="credits">
-          <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-        -->
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
           Designed by
-          <a href="https://alanbinu-portfolio.web.app/#/" target="_blank"
+          <a href="https://alanbinu-portfolio.web.app/" target="_blank"
             >Alan Binu</a
           >
         </div>
       </div>
     </footer>
-    <!-- #footer -->
+    <!-- End Footer -->
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <!-- Uncomment below i you want to use a preloader -->
-    <!-- <div id="preloader"></div> -->
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/mobile-nav/mobile-nav.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
-
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
-      function sendEmail() {
-        swal("Good job!", "Email Send", "success").then((willDelete) => {
-          if (willDelete) {
-            
-            reload = location.reload();
-          } else {
-            swal("Your email process is canceled");
-            
-          }reload = location.reload();
-        });
-        
-     // reloadButton.addEventListener("click", reload, false);
-}
-
-      function option(val) {
-        var element = document.getElementById("Pricing");
-        if (val == "Purchase" || val =="Demo")
-          element.style.display = "block";
-        else element.style.display = "none";
-      }
-
-      function option1(val) {
-        var element = document.getElementById("tech");
-        if (val == "com")
-          element.style.display = "block";
-        else element.style.display = "none";
-      }
-
-      function sub() {
-        swal("Good job!", "Successfully Subscribed", "success");
+      function sendEmail(e) {
+        swal("Good job!", "Email Send", "success");
+        e.preventDefault();
       }
     </script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

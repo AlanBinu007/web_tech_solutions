@@ -65,127 +65,185 @@
           <span>Web Tech Solutions</span>
         </a>
 
-      
+        <nav id="navbar" class="navbar">
+          <ul>
+ 
+            <li><a class="nav-link scrollto" href="#contact"></a></li> <li><a class="nav-link scrollto" href="#contact"></a></li> <li><a class="nav-link scrollto" href="#contact"></a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
         <!-- .navbar -->
       </div>
     </header>
     <br><br><br><br>
     <center>
-        <h2><b>Please Fill The Checkout Form</b></h2>
+        <h2><b>Please Fill Out The Form For Demo</b></h2>
     </center><br>
     <center>
-        <p>Thanks for purchasing!! You are now a family member of Web Tech Solutions</p>
+        <p>Thanks for Contacting Us!!</p>
     </center><br>
         <div class="row" style="margin-right: 0px;">
             <div class="col-75">
                 <div class="container1" style="
-                margin-left: 10%;
-            
-                margin-bottom: 10%  ;"
+                margin-left: 10%; margin-right: 10%;"
             >
-                    <form method="GET" action="https://rzp.io/i/JRgTXM9Zs">
+                    <form onsubmit=alert()>
 
                         <div class="row">
                             <div class="col-50">
-                                <h3>Billing Address</h3>
+                                <h3>Contact</h3>
                                 <label for="fname"><i class="fa fa-user"></i> Full Name</label>
                                 <input type="text" id="fname" name="firstname" placeholder="Alan Binu" required>
                                 <label for="email"><i class="fa fa-envelope"></i> Email</label>
                                 <input type="email" id="email" name="email" placeholder="example@example.com" required>
                                 <label for="adr"><i class="fa fa-address-card-o"></i> Phone Number</label>
                                 <input type="text" id="adr" name="address" placeholder="0000000000" required  pattern="[0-9]{10}">
-                                <label for="city"><i class="fa fa-institution"></i> City</label>
-                                <input type="text" id="city" name="city" placeholder="Thodupuzha" required>
+                                <label for="city"><i class="fa fa-institution"></i> Requirments</label>
+                                
 
-                                <div class="row">
-                                    <div class="col-50">
-                                        <label for="state">State</label>
-                                        <input type="text" id="state" name="state" placeholder="Idukki" required>
-                                    </div>
-                                    <div class="col-50">
-                                        <label for="zip">Zip</label>
-                                        <input type="text" id="zip" name="zip" placeholder="00 00 00" pattern="[0-9]{6}" required>
-                                    </div>
-                                </div>
+                                <textarea id="city" name="city" placeholder="Ene your additional requirments like WebCam, USB Hub etc.." ></textarea>
                             </div>
 
                             <div class="col-50">
-                                <h3>Business Details</h3>
-                                <br>
-
-                                <label for="fname">Accepted Cards</label>
-                                <div class="icon-container1">
-                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
-                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
-                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
-                                    
-                                </div>
-                                <br>
+                                <h3>System Details</h3>
+                               
                                 
-                                <label for="cname">Business Name/Company Name</label>
-                                <input type="text" id="cname" name="cardname" placeholder="Web Tech Solutions" required>
-                                <label for="ccnum">Company Type</label>
-                                <input type="text" id="ccnum" name="cardnumber" placeholder="Retails, Gas, Textile, Gold Loan" required>
-                                <label for="expmonth">Cooperation Type</label>
-                                <input type="text" id="expmonth" name="expmonth" placeholder="Private, Goverment, Public" required>
                                 <div class="row">
                                     <div class="col-50">
-                                        <label for="expyear">City</label>
-                                        <input type="text" id="expyear" name="expyear" placeholder="Idukki" required>
+                                        <label for="expyear">Cpu</label>
+                                        <select required>
+                                            <option></option>
+                                            <option>i3</option>
+                                            <option>i5</option>
+                                            <option>i7</option>
+                                        </select>
+                                       
                                     </div>
                                     <div class="col-50">
-                                        <label for="cvv">Started In</label>
-                                        <input type="text" id="cvv" name="cvv" placeholder="2017" required pattern="[0-9]{4}">
+                                        <label for="cvv">Ram</label>
+                                        <select required>
+                                            <option></option>
+                                            <option>8</option>
+                                            <option>16</option>
+                                            <option>32</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">SSD</label>
+                                        <select required>
+                                            <option></option>
+                                            <option>128GB</option>
+                                            <option>256GB</option>
+                                            <option>1TB</option>
+                                            <option>NO NEEDED</option>
+                                        </select>
+                                       
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">HDD</label>
+                                        <select required>
+                                            <option></option>
+                                            <option>128GB</option>
+                                            <option>256GB</option>
+                                            <option>500GB</option>
+                                            <option>1TB</option>
+                                            <option>2TB</option>
+                                            <option>NO NEEDED</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">Graphics Card</label>
+                                        <select required>
+                                        <option></option>
+                                        <option>GT 710</option>
+                                        <option>GTX 1050</option>
+                                        <option>GTX 1050ti</option>
+                                        <option>RTX 1080</option>
+                                        <option>NO NEEDED</option>
+                                       </select>
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">Monitor</label>
+                                        <select required>
+                                            <option></option>
+                                            <option>15 Inch</option>
+                                            <option>18.5 Inch</option>
+                                            <option>21.1 Inch</option>
+                                            <option>28 Inch</option>
+                                            <option>NO NEEDED</option>
+                                           </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">Mouse and Keyboard</label>
+                                        <select required>
+                                        <option></option>
+                                            <option>Wired</option>
+                                            <option>Wire Less</option>
+                                            
+                                            <option>NO NEEDED</option>
+                                           </select>
+                                       
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">Body Case</label>
+                                        <select required>
+                                            <option></option>
+                                                <option>Normal</option>
+                                                <option>Normal with RGB</option>
+                                                <option>Gamming</option>
+                                                
+                                                <option>Gamming with RGB</option>
+                                               </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">Available Date</label>
+                                        <select>
+                                            <option></option>
+                                            <option>First Sunday</option>
+                                            <option>Secound Sunday</option>
+                                            <option>Third Sunday</option>
+                                            <option>Forth Sunday</option>
+                                            <option>First Saterday</option>
+                                            <option>Secound Saterday</option>
+                                            <option>Third Saterday</option>
+                                            <option>Forth Saterday</option>
+                                            <option>Not Available</option>
+                                        </select>
+                                       
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">Available Time</label>
+                                        <input type="time" id="cvv" name="cvv" placeholder="Thodupuzha"  required>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                         <label>
-                            <input type="checkbox" checked="checked" name="sameadr" required> Agree to <a href="https://www.termsfeed.com/live/85540e5f-ff9b-4f1c-b2f1-1a0b6d337e1e" target="_blank">Terms & Conditions</a>
+                            <input type="checkbox" checked="checked" name="sameadr" > Agree to <a href="https://www.termsfeed.com/live/85540e5f-ff9b-4f1c-b2f1-1a0b6d337e1e" target="_blank">Terms & Conditions</a>
                         </label>
-                        <input type="submit" value="🔒 Continue to checkout" class="btn">
+                        <input type="submit" value="Request to Contact" class="btn"> 
                     </form>
                 </div>
             </div>
            
-            <div class="col-25">
-                <div class="container1" style="
-                margin-right: 10%;
-            ">
-                    <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span>
-                    </h4>
-                    <p>Basic Plan For Web site <span class="price">₹4999</span></p>
-
-                    <hr>
-                    <p>Total <span class="price" style="color:black"><b>₹4999</b></span></p>
-                </div>
-                <br>
-                <div class="form-group" style="
-                margin-right: 10%;
-            "> <label>Have coupon?</label>
-
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Coupon code">
-    
-                    </div>
-                    <button onclick="alert()" class="btn">Redeem</button>
-    
-                </div>
-            </div>
+            
             <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
             <script>
                 function alert() {
-                    swal("Oops", "Invalid Code!", "error");
+                    
+                    swal("Success", "Requested Successfully", "success");
                 }
             </script>
 
-
-<br>
-<br>
-<br> <br>
-<br>
 <br>
     <!-- ======= Footer ======= -->
 
@@ -323,7 +381,7 @@
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <script>
         function sendEmail(e) {
-          swal("Good job!", "Email Send", "success");
+          swal("Good job!", "Your Request Registered", "success");
           e.preventDefault();
         }
       </script>
