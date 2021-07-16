@@ -45,6 +45,34 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <!-- Start of Async Drift Code -->
+<script>
+  "use strict";
+  
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('guapwcw9xv8n');
+  </script>
+  <!-- End of Async Drift Code -->
   </head>
 
   <body>
@@ -68,9 +96,7 @@
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
             <li><a class="nav-link scrollto" href="#services">Services</a></li>
-            <li>
-              <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
-            </li>
+            
 
             <li class="dropdown">
               <a href="#"
@@ -110,9 +136,17 @@
                 </li>
               </ul>
             </li>
+            <li>
+              <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
+            </li>
+            
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li>
+              <a class="getstarted" href="#pricing">Buy Now</a>
+            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
+          
         </nav>
         <!-- .navbar -->
       </div>
@@ -1021,16 +1055,7 @@
             <p>Check our latest work</p>
           </header>
 
-          <div class="row" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
-                <li data-filter=".filter-web">Web</li>
-              </ul>
-            </div>
-          </div>
+
 
           <div
             class="row gy-4 portfolio-container"
@@ -1045,8 +1070,8 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>App</p>
+                  <h4>Beithal Restaurant</h4>
+                  <p>Web Application</p>
                   <div class="portfolio-links">
                     <a
                       href="assets/img/portfolio/portfolio-1.jpg"
@@ -1055,7 +1080,7 @@
                       title="App 1"
                       ><i class="bi bi-plus"></i
                     ></a>
-                    <a href="portfolio-details.html" title="More Details"
+                    <a href="beithalrestaurant.html" title="More Details" target="_blank"
                       ><i class="bi bi-link"></i
                     ></a>
                   </div>
@@ -1071,17 +1096,17 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>Web 3</h4>
-                  <p>Web</p>
+                  <h4>Ajmal Khan</h4>
+                  <p>Protfolio</p>
                   <div class="portfolio-links">
                     <a
                       href="assets/img/portfolio/portfolio-2.jpg"
                       data-gallery="portfolioGallery"
                       class="portfokio-lightbox"
-                      title="Web 3"
+                      title="Woodies Homes"
                       ><i class="bi bi-plus"></i
                     ></a>
-                    <a href="portfolio-details.html" title="More Details"
+                    <a href="ajmalprotfolio.html" title="More Details" target="_blank"
                       ><i class="bi bi-link"></i
                     ></a>
                   </div>
@@ -1097,69 +1122,17 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>App</p>
+                  <h4>Samruthi Stores</h4>
+                  <p>Web Application</p>
                   <div class="portfolio-links">
                     <a
                       href="assets/img/portfolio/portfolio-3.jpg"
                       data-gallery="portfolioGallery"
                       class="portfokio-lightbox"
-                      title="App 2"
+                      title="Samruthi Stores"
                       ><i class="bi bi-plus"></i
                     ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-4.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Card 2</h4>
-                  <p>Card</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-4.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Card 2"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-5.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Web 2</h4>
-                  <p>Web</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-5.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Web 2"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
+                    <a href="samruthistores.html" title="More Details" target="_blank"
                       ><i class="bi bi-link"></i
                     ></a>
                   </div>
@@ -1175,69 +1148,17 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>App</p>
+                  <h4>Ambady Bar</h4>
+                  <p>Web Application</p>
                   <div class="portfolio-links">
                     <a
                       href="assets/img/portfolio/portfolio-6.jpg"
                       data-gallery="portfolioGallery"
                       class="portfokio-lightbox"
-                      title="App 3"
+                      title="Ambady Bar"
                       ><i class="bi bi-plus"></i
                     ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-7.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Card 1</h4>
-                  <p>Card</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-7.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Card 1"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-8.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Card 3</h4>
-                  <p>Card</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-8.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Card 3"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
+                    <a href="ambadybar.html" title="More Details" target="_blank"
                       ><i class="bi bi-link"></i
                     ></a>
                   </div>
@@ -1248,22 +1169,54 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
               <div class="portfolio-wrap">
                 <img
+                  src="assets/img/portfolio/portfolio-5.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Online Advocate Bookings System</h4>
+                  <p>Web Application</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-5.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfokio-lightbox"
+                      title="Online Advocate Bookings System"
+                      ><i class="bi bi-plus"></i
+                    ></a> 
+                    <a href="aniladvocate.html" title="More Details" target="_blank"
+                      ><i class="bi bi-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          
+
+           
+
+            
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
                   src="assets/img/portfolio/portfolio-9.jpg"
                   class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>Web 3</h4>
-                  <p>Web</p>
+                  <h4>Vijayalekshimi Temple</h4>
+                  <p>Web Site</p>
                   <div class="portfolio-links">
                     <a
                       href="assets/img/portfolio/portfolio-9.jpg"
                       data-gallery="portfolioGallery"
                       class="portfokio-lightbox"
-                      title="Web 3"
+                      title="Vijayalekshimi Temple"
                       ><i class="bi bi-plus"></i
                     ></a>
-                    <a href="portfolio-details.html" title="More Details"
+                    <a href="vijayalekshmitemple.html" title="More Details" target="_blank"
                       ><i class="bi bi-link"></i
                     ></a>
                   </div>
@@ -1420,24 +1373,22 @@
                 <div class="member">
                   <div class="member-img">
                     <img
-                      src="assets/img/team/team-4.jpg"
+                      src="assets/img/team/team-4.jpeg"
                       class="img-fluid"
                       alt=""
                     />
                     <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
+                      <a href="https://twitter.com/alanalanbinu" target="_blank"><i class="bi bi-twitter"></i></a>
+                      <a href="https://www.instagram.com/alan._.binu/" target="_blank"><i class="bi bi-instagram"></i></a>
+                      <a href="https://github.com/AlanBinu007" target="_blank"><i class="bi bi-github"></i></a>
+                      <a href="https://www.linkedin.com/in/alan-binu-95025015a/" target="_blank"><i class="bi bi-linkedin"></i></a>
                     </div>
                   </div>
                   <div class="member-info">
                     <h4>Alan Binu</h4>
                     <span>CEO & Co-Founder</span>
                     <p>
-                      Rerum voluptate non adipisci animi distinctio et deserunt
-                      amet voluptas. Quia aut aliquid doloremque ut possimus
-                      ipsum officia.
+                      Hi, I am Alan Binu. I am  currently working as a Full Stack Engineer in Infosys. I also completed my Master's degree in Computer Application. I love to do Technical Blogging, Competitive Programming and Open Source Contributoring.
                     </p>
                   </div>
                 </div>
@@ -1452,8 +1403,8 @@
       <section id="clients" class="clients">
         <div class="container" data-aos="fade-up">
           <header class="section-header">
-            <h2>Our Clients</h2>
-            <p>Temporibus omnis officia</p>
+            <h2>some of Our Clients</h2>
+            <p>Our Some Valuable clients</p>
           </header>
 
           <div class="clients-slider swiper-container">
@@ -1461,56 +1412,56 @@
               <div class="swiper-slide">
                 <img
                   src="assets/img/clients/client-1.png"
-                  class="img-fluid"
+                  class="img-fluid1"
                   alt=""
                 />
               </div>
               <div class="swiper-slide">
                 <img
                   src="assets/img/clients/client-2.png"
-                  class="img-fluid"
+                  class="img-fluid1"
                   alt=""
                 />
               </div>
               <div class="swiper-slide">
                 <img
                   src="assets/img/clients/client-3.png"
-                  class="img-fluid"
+                  class="img-fluid1"
                   alt=""
                 />
               </div>
               <div class="swiper-slide">
                 <img
                   src="assets/img/clients/client-4.png"
-                  class="img-fluid"
+                  class="img-fluid1"
                   alt=""
                 />
               </div>
               <div class="swiper-slide">
                 <img
                   src="assets/img/clients/client-5.png"
-                  class="img-fluid"
+                  class="img-fluid1"
                   alt=""
                 />
               </div>
               <div class="swiper-slide">
                 <img
                   src="assets/img/clients/client-6.png"
-                  class="img-fluid"
+                  class="img-fluid1"
                   alt=""
                 />
               </div>
               <div class="swiper-slide">
                 <img
                   src="assets/img/clients/client-7.png"
-                  class="img-fluid"
+                  class="img-fluid1"
                   alt=""
                 />
               </div>
               <div class="swiper-slide">
                 <img
                   src="assets/img/clients/client-8.png"
-                  class="img-fluid"
+                  class="img-fluid1"
                   alt=""
                 />
               </div>
@@ -1914,11 +1865,7 @@
     </footer>
     <!-- End Footer -->
 
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>

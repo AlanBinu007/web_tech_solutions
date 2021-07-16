@@ -239,6 +239,10 @@ section {
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #4154f1;
 }
+.img-fluid1{
+  max-width: 170%;
+  margin-left: 3%;
+}
 
 .navbar .getstarted {
   background: #4154f1;
@@ -1612,7 +1616,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #066330;
+  background: #ec0a28;
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
