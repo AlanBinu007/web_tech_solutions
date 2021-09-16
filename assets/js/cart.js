@@ -178,7 +178,7 @@ function displayCart() {
       ">+</button></div></td>" +
       "<td><a class='delete-item' data-name=" +
       cartArray[i].name +
-      "><img src='https://img.icons8.com/ios-glyphs/30/000000/macos-close.png'/></a></td>" +
+      "><i class='fa fa-close' style='font-size:30px;color:red'></i></a></td>" +
       " = " +
       "<td>" +
       "<b>" +
