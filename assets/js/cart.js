@@ -158,12 +158,14 @@ function displayCart() {
     output +=
       "<tr>" +
       "<td>" +
+      // "<b>" +
       cartArray[i].name +
+      // "</b>" +
       "</td>" +
-      "<td>(" +
+      "<td>₹" +
       cartArray[i].price +
-      ")</td>" +
-      "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" +
+      ".00</td>" +
+      "<td><div class='input-group' style='padding-top: 0px;'><button class='minus-item input-group-addon btn btn-primary' data-name=" +
       cartArray[i].name +
       ">-</button>" +
       "<input type='number' class='item-count form-control' data-name='" +
@@ -179,7 +181,9 @@ function displayCart() {
       "><img src='https://img.icons8.com/ios-glyphs/30/000000/macos-close.png'/></a></td>" +
       " = " +
       "<td>" +
+      "<b>" +
       cartArray[i].total +
+      "</b>" +
       "</td>" +
       "</tr>";
   }

@@ -223,10 +223,11 @@
                 data-toggle="modal"
                 data-target="#cart"
                 style="border: none; background-color: white"
+                id="cartview"
               >
                 <i class="fa fa-shopping-cart" style="font-size: 35px"></i>
                 <span class="badge badge-warning" id="lblCartCount">
-                  <span class="total-count"></span>
+                  <span class="total-count" id="totalcount"></span>
                 </span>
               </button>
             </li>
@@ -780,6 +781,7 @@
                 <ul>
                   <li>Demo for Web Site</li>
 
+                  <br />
                   <li>Request Now and fill the form for getting a Demo</li>
                   <li>
                     We are here to show you different template that best fit for
@@ -848,6 +850,14 @@
                 <a href="payment.html" class="btn-buy" target="_blank"
                   >Buy Now</a
                 >
+                <br />
+                <a
+                  href="#"
+                  data-name="Regular-Plan-For-Web-Site"
+                  data-price="5999"
+                  class="add-to-cart"
+                  >Add to <i class="fa fa-shopping-cart"></i>
+                </a>
               </div>
             </div>
 
@@ -875,6 +885,14 @@
                 <a href="paymentform.html" class="btn-buy" target="_blank"
                   >Buy Now</a
                 >
+                <br />
+                <a
+                  href="#"
+                  data-name="Premium-Plan-For-Web-Site"
+                  data-price="7999"
+                  class="add-to-cart"
+                  >Add to <i class="fa fa-shopping-cart"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -948,6 +966,14 @@
                 <a href="payform.html" class="btn-buy" target="_blank"
                   >Buy Now</a
                 >
+                <br />
+                <a
+                  href="#"
+                  data-name="Basic-Plan-For-Web-Application"
+                  data-price="6999"
+                  class="add-to-cart"
+                  >Add to <i class="fa fa-shopping-cart"></i>
+                </a>
               </div>
             </div>
 
@@ -969,12 +995,20 @@
                   <li>Email Notification Facility</li>
                   <li>Data Encryption</li>
                   <li>Local Database</li>
-                  <li class="na">Online Database</li>
+                  <li>Online Database</li>
                   <li class="na">Online Payment</li>
                 </ul>
                 <a href="checkout.html" class="btn-buy" target="_blank"
                   >Buy Now</a
                 >
+                <br />
+                <a
+                  href="#"
+                  data-name="Regular-Plan-For-Web-Application"
+                  data-price="8999"
+                  class="add-to-cart"
+                  >Add to <i class="fa fa-shopping-cart"></i>
+                </a>
               </div>
             </div>
 
@@ -997,12 +1031,19 @@
                   <li>Email Notification Facility</li>
                   <li>Data Encryption</li>
                   <li>Local and Online Database</li>
-                  <li>Online Database</li>
                   <li>SMS Facility</li>
                 </ul>
                 <a href="checkoutform.html" class="btn-buy" target="_blank"
                   >Buy Now</a
                 >
+                <br />
+                <a
+                  href="#"
+                  data-name="Premium-Plan-For-Web-Application"
+                  data-price="14999"
+                  class="add-to-cart"
+                  >Add to <i class="fa fa-shopping-cart"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -1034,15 +1075,11 @@
                 <ul>
                   <li>Price Discussion for Computer</li>
 
-                  <li>
-                    Request Now and fill the form with your required computer
-                    Spec
-                  </li>
+                  <li>Fill the form with your required computer Spec</li>
                   <li>
                     We are here to provide you the best price range Computer
-                    Systems
+                    Systems and We are also repairing the existing systems
                   </li>
-                  <li>We are also repairing the existing systems</li>
                 </ul>
                 <a href="demopc.html" class="btn-buy" target="_blank"
                   >Request Demo</a
@@ -1073,6 +1110,14 @@
                   <li>1 Year Warranty</li>
                 </ul>
                 <a href="form.html" class="btn-buy" target="_blank">Buy Now</a>
+                <br />
+                <a
+                  href="#"
+                  data-name="Student-Plan-For-Computer"
+                  data-price="35000"
+                  class="add-to-cart"
+                  >Add to <i class="fa fa-shopping-cart"></i>
+                </a>
               </div>
             </div>
 
@@ -1097,10 +1142,19 @@
                   <li>2GB Graphics Card</li>
                   <li>Accessories : Acer</li>
                   <li>1 Year Warrenty</li>
+                  <li>1 Year Free Office 365</li>
                 </ul>
                 <a href="filldetails.html" class="btn-buy" target="_blank"
                   >Buy Now</a
                 >
+                <br />
+                <a
+                  href="#"
+                  data-name="Business/Developer-Plan-For-Computer"
+                  data-price="45000"
+                  class="add-to-cart"
+                  >Add to <i class="fa fa-shopping-cart"></i>
+                </a>
               </div>
             </div>
 
@@ -1128,6 +1182,14 @@
                 <a href="fillform.html" class="btn-buy" target="_blank"
                   >Buy Now</a
                 >
+                <br />
+                <a
+                  href="#"
+                  data-name="Gaming-and-Video-Editing-Plan-For-Computer"
+                  data-price="69999"
+                  class="add-to-cart"
+                  >Add to <i class="fa fa-shopping-cart"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -1988,7 +2050,9 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <h5 class="modal-title" id="exampleModalLabel">
+              <center><b>My Cart</b></center>
+            </h5>
             <button
               type="button"
               class="close"
@@ -2000,7 +2064,9 @@
           </div>
           <div class="modal-body">
             <table class="show-cart table"></table>
-            <div>Total price: ₹<span class="total-cart"></span></div>
+            <div>
+              Total price: ₹<b><span class="total-cart"></span></b>
+            </div>
           </div>
           <div class="modal-footer">
             <button
@@ -2010,7 +2076,12 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Order now</button>
+            <button class="clear-cart btn btn-danger">Clear Cart</button>
+            <a href="orderitem.html" target="_blank"
+              ><button type="button" class="btn btn-primary" id="ordernow">
+                Make Order
+              </button></a
+            >
           </div>
         </div>
       </div>
@@ -2032,6 +2103,19 @@
         swal("Good job!", "Email Send", "success");
         e.preventDefault();
       }
+    </script>
+    <script>
+      document.getElementById("cartview").style.visibility = "hidden";
+      $(".total-count").on("DOMSubtreeModified", function () {
+        var span = document.getElementById("totalcount").textContent;
+        if (span == 0) {
+          document.getElementById("cartview").style.visibility = "hidden";
+          document.getElementById("ordernow").style.visibility = "hidden";
+        } else {
+          document.getElementById("cartview").style.visibility = "visible";
+          document.getElementById("ordernow").style.visibility = "visible";
+        }
+      });
     </script>
 
     <!-- Template Main JS File -->
