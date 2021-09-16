@@ -19,6 +19,10 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Vendor CSS Files -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -29,13 +33,34 @@
       rel="stylesheet"
     />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/css/cart.css" rel="stylesheet" />
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link
       href="assets/vendor/glightbox/css/glightbox.min.css"
       rel="stylesheet"
     />
-
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
@@ -45,34 +70,60 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <!-- Start of Async Drift Code -->
-<script>
-  "use strict";
-  
-  !function() {
-    var t = window.driftt = window.drift = window.driftt || [];
-    if (!t.init) {
-      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-      t.factory = function(e) {
-        return function() {
-          var n = Array.prototype.slice.call(arguments);
-          return n.unshift(e), t.push(n), t;
-        };
-      }, t.methods.forEach(function(e) {
-        t[e] = t.factory(e);
-      }), t.load = function(t) {
-        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-        var i = document.getElementsByTagName("script")[0];
-        i.parentNode.insertBefore(o, i);
-      };
-    }
-  }();
-  drift.SNIPPET_VERSION = '0.3.1';
-  drift.load('guapwcw9xv8n');
-  </script>
-  <!-- End of Async Drift Code -->
+    <!-- Start of Async Drift Code -->
+    <script>
+      "use strict";
+
+      !(function () {
+        var t = (window.driftt = window.drift = window.driftt || []);
+        if (!t.init) {
+          if (t.invoked)
+            return void (
+              window.console &&
+              console.error &&
+              console.error("Drift snippet included twice.")
+            );
+          (t.invoked = !0),
+            (t.methods = [
+              "identify",
+              "config",
+              "track",
+              "reset",
+              "debug",
+              "show",
+              "ping",
+              "page",
+              "hide",
+              "off",
+              "on",
+            ]),
+            (t.factory = function (e) {
+              return function () {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }),
+            t.methods.forEach(function (e) {
+              t[e] = t.factory(e);
+            }),
+            (t.load = function (t) {
+              var e = 3e5,
+                n = Math.ceil(new Date() / e) * e,
+                o = document.createElement("script");
+              (o.type = "text/javascript"),
+                (o.async = !0),
+                (o.crossorigin = "anonymous"),
+                (o.src =
+                  "https://js.driftt.com/include/" + n + "/" + t + ".js");
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            });
+        }
+      })();
+      drift.SNIPPET_VERSION = "0.3.1";
+      drift.load("guapwcw9xv8n");
+    </script>
+    <!-- End of Async Drift Code -->
   </head>
 
   <body>
@@ -96,7 +147,6 @@
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
             <li><a class="nav-link scrollto" href="#services">Services</a></li>
-            
 
             <li class="dropdown">
               <a href="#"
@@ -109,8 +159,14 @@
                   ></a>
                   <ul>
                     <li><a href="pay.html" target="_blank">Basic Plan</a></li>
-                    <li><a href="payment.html" target="_blank">Regular Plan</a></li>
-                    <li><a href="paymentform.html" target="_blank">Premium Plan</a></li>
+                    <li>
+                      <a href="payment.html" target="_blank">Regular Plan</a>
+                    </li>
+                    <li>
+                      <a href="paymentform.html" target="_blank"
+                        >Premium Plan</a
+                      >
+                    </li>
                   </ul>
                 </li>
                 <li class="dropdown">
@@ -118,9 +174,17 @@
                     ><span>Software</span> <i class="bi bi-chevron-right"></i
                   ></a>
                   <ul>
-                    <li><a href="payform.html" target="_blank">Basic Plan</a></li>
-                    <li><a href="checkout.html" target="_blank">Regular Plan</a></li>
-                    <li><a href="checkoutform.html" target="_blank">Premium Plan</a></li>
+                    <li>
+                      <a href="payform.html" target="_blank">Basic Plan</a>
+                    </li>
+                    <li>
+                      <a href="checkout.html" target="_blank">Regular Plan</a>
+                    </li>
+                    <li>
+                      <a href="checkoutform.html" target="_blank"
+                        >Premium Plan</a
+                      >
+                    </li>
                   </ul>
                 </li>
                 <li class="dropdown">
@@ -129,9 +193,17 @@
                     <i class="bi bi-chevron-right"></i
                   ></a>
                   <ul>
-                    <li><a href="form.html" target="_blank">Student System</a></li>
-                    <li><a href="filldetails.html" target="_blank">Business System</a></li>
-                    <li><a href="fillform.html" target="_blank">Gamming System</a></li>
+                    <li>
+                      <a href="form.html" target="_blank">Student System</a>
+                    </li>
+                    <li>
+                      <a href="filldetails.html" target="_blank"
+                        >Business System</a
+                      >
+                    </li>
+                    <li>
+                      <a href="fillform.html" target="_blank">Gamming System</a>
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -139,14 +211,27 @@
             <li>
               <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
             </li>
-            
+
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
             <li>
               <a class="getstarted" href="login.html">Log In</a>
             </li>
+            &nbsp;&nbsp;
+            <li>
+              <button
+                type="button"
+                data-toggle="modal"
+                data-target="#cart"
+                style="border: none; background-color: white"
+              >
+                <i class="fa fa-shopping-cart" style="font-size: 35px"></i>
+                <span class="badge badge-warning" id="lblCartCount">
+                  <span class="total-count"></span>
+                </span>
+              </button>
+            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
-          
         </nav>
         <!-- .navbar -->
       </div>
@@ -166,7 +251,7 @@
               Systems for your Business
             </h2>
             <div data-aos="fade-up" data-aos-delay="600">
-              <div class="text-center text-lg-start">
+              <div class="text-lg-start">
                 <a
                   href="#about"
                   class="
@@ -253,7 +338,6 @@
                 <div class="text-center text-lg-start"></div>
               </div>
             </div>
-
             <div
               class="col-lg-6 d-flex align-items-center"
               data-aos="zoom-out"
@@ -585,7 +669,9 @@
                 <i class="ri-discuss-line icon"></i>
                 <h3>User-Friendly Websites</h3>
                 <p>
-                  We also providing your company website with diffrent plans.Which includes Online payment, Online Database and many more.
+                  We also providing your company website with diffrent
+                  plans.Which includes Online payment, Online Database and many
+                  more.
                 </p>
               </div>
             </div>
@@ -728,6 +814,14 @@
                   <li class="na">Online Payment</li>
                 </ul>
                 <a href="pay.html" class="btn-buy" target="_blank">Buy Now</a>
+                <br />
+                <a
+                  href="#"
+                  data-name="Basic-Plan-For-Web-Site"
+                  data-price="4999"
+                  class="add-to-cart"
+                  >Add to <i class="fa fa-shopping-cart"></i>
+                </a>
               </div>
             </div>
 
@@ -1053,8 +1147,6 @@
             <p>Check our latest work</p>
           </header>
 
-
-
           <div
             class="row gy-4 portfolio-container"
             data-aos="fade-up"
@@ -1078,7 +1170,10 @@
                       title="Beithal Restaurant"
                       ><i class="bi bi-plus"></i
                     ></a>
-                    <a href="beithalrestaurant.html" title="More Details" target="_blank"
+                    <a
+                      href="beithalrestaurant.html"
+                      title="More Details"
+                      target="_blank"
                       ><i class="bi bi-link"></i
                     ></a>
                   </div>
@@ -1104,7 +1199,10 @@
                       title="Ajmal Khan | Protfolio"
                       ><i class="bi bi-plus"></i
                     ></a>
-                    <a href="ajmalprotfolio.html" title="More Details" target="_blank"
+                    <a
+                      href="ajmalprotfolio.html"
+                      title="More Details"
+                      target="_blank"
                       ><i class="bi bi-link"></i
                     ></a>
                   </div>
@@ -1130,7 +1228,10 @@
                       title="Vijayalekshimi Temple"
                       ><i class="bi bi-plus"></i
                     ></a>
-                    <a href="vijayalekshmitemple.html" title="More Details" target="_blank"
+                    <a
+                      href="vijayalekshmitemple.html"
+                      title="More Details"
+                      target="_blank"
                       ><i class="bi bi-link"></i
                     ></a>
                   </div>
@@ -1156,7 +1257,10 @@
                       title="Ambady Bar"
                       ><i class="bi bi-plus"></i
                     ></a>
-                    <a href="ambadybar.html" title="More Details" target="_blank"
+                    <a
+                      href="ambadybar.html"
+                      title="More Details"
+                      target="_blank"
                       ><i class="bi bi-link"></i
                     ></a>
                   </div>
@@ -1181,8 +1285,11 @@
                       class="portfokio-lightbox"
                       title="Online Advocate Bookings System"
                       ><i class="bi bi-plus"></i
-                    ></a> 
-                    <a href="aniladvocate.html" title="More Details" target="_blank"
+                    ></a>
+                    <a
+                      href="aniladvocate.html"
+                      title="More Details"
+                      target="_blank"
                       ><i class="bi bi-link"></i
                     ></a>
                   </div>
@@ -1190,9 +1297,6 @@
               </div>
             </div>
 
-          
-
-           
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <img
@@ -1211,16 +1315,16 @@
                       title="Samruthi Stores"
                       ><i class="bi bi-plus"></i
                     ></a>
-                    <a href="samruthistores.html" title="More Details" target="_blank"
+                    <a
+                      href="samruthistores.html"
+                      title="More Details"
+                      target="_blank"
                       ><i class="bi bi-link"></i
                     ></a>
                   </div>
                 </div>
               </div>
             </div>
-            
-
-            
           </div>
         </div>
       </section>
@@ -1376,17 +1480,32 @@
                       alt=""
                     />
                     <div class="social">
-                      <a href="https://twitter.com/alanalanbinu" target="_blank"><i class="bi bi-twitter"></i></a>
-                      <a href="https://www.instagram.com/alan._.binu/" target="_blank"><i class="bi bi-instagram"></i></a>
-                      <a href="https://github.com/AlanBinu007" target="_blank"><i class="bi bi-github"></i></a>
-                      <a href="https://www.linkedin.com/in/alan-binu-95025015a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                      <a href="https://twitter.com/alanalanbinu" target="_blank"
+                        ><i class="bi bi-twitter"></i
+                      ></a>
+                      <a
+                        href="https://www.instagram.com/alan._.binu/"
+                        target="_blank"
+                        ><i class="bi bi-instagram"></i
+                      ></a>
+                      <a href="https://github.com/AlanBinu007" target="_blank"
+                        ><i class="bi bi-github"></i
+                      ></a>
+                      <a
+                        href="https://www.linkedin.com/in/alan-binu-95025015a/"
+                        target="_blank"
+                        ><i class="bi bi-linkedin"></i
+                      ></a>
                     </div>
                   </div>
                   <div class="member-info">
                     <h4>Alan Binu</h4>
                     <span>CEO & Co-Founder</span>
                     <p>
-                      Hi, I am Alan Binu. I am  currently working as a Full Stack Engineer in Infosys. I also completed my Master's degree in Computer Application. I love to do Technical Blogging, Competitive Programming and Open Source Contributoring.
+                      Hi, I am Alan Binu. I am currently working as a Full Stack
+                      Engineer in Infosys. I also completed my Master's degree
+                      in Computer Application. I love to do Technical Blogging,
+                      Competitive Programming and Open Source Contributoring.
                     </p>
                   </div>
                 </div>
@@ -1597,7 +1716,8 @@
                     data-bs-parent="#faqlist2"
                   >
                     <div class="accordion-body">
-                      Just call me or fill the contact form. We can help you out.
+                      Just call me or fill the contact form. We can help you
+                      out.
                     </div>
                   </div>
                 </div>
@@ -1626,10 +1746,6 @@
                 </div>
               </div>
             </div>
-
-
-
-            
           </div>
         </div>
       </section>
@@ -1783,7 +1899,6 @@
                   ><i class="bi bi-linkedin bx bxl-linkedin"></i
                 ></a>
               </div>
-              
             </div>
 
             <div class="col-lg-2 col-6 footer-links">
@@ -1849,10 +1964,7 @@
       </div>
 
       <div class="container">
-        <div class="copyright">
-          No Copyright&copy; Issue. Fell Free To Copy
-          
-        </div>
+        <div class="copyright">No Copyright&copy; Issue. Fell Free To Copy</div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you purchased the pro version. -->
@@ -1865,9 +1977,45 @@
         </div>
       </div>
     </footer>
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table"></table>
+            <div>Total price: ₹<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- End Footer -->
-
-    
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
@@ -1878,6 +2026,7 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/js/cart.js"></script>
     <script>
       function sendEmail(e) {
         swal("Good job!", "Email Send", "success");
