@@ -143,13 +143,15 @@
         <script src="assets/js/login.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script>
-            function signup(e) {
+            $(document).ready(function (){
+                    signin();
+                    signup();
+            });
+            function signup() {
                 setTimeout(() => { swal("Error!", "Sorry! We Stoped the service for a moment", "error"); }, 2000);
-                e.preventDefault();
             }
-            function signin(e) {
+            function signin() {
                 setTimeout(() => { swal("Error!", "Incorrect Email or Password. Try Again!!", "error"); }, 2000);
-                e.preventDefault();
             }
 
             function onSignIn(googleUser) {

@@ -175,20 +175,28 @@
             </div>
            
             <div class="col-25">
-                
-                <br>
-                <div class="form-group" style="
-                margin-right: 10%;
-            "> <label>Have coupon?</label>
+              <div class="container1" style="
+              margin-right: 10%;
+          ">
+                  <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b><span id="totalcount"></span></b></span>
+                  </h4>
 
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Coupon code">
-    
-                    </div>
-                    <button onclick="alert()" class="btn">Redeem</button>
-    
-                </div>
-            </div>
+                  <hr>
+                  <p>Total <span class="price" style="color:black"><b>₹<span id="totalamaount"></span></b></span></p>
+              </div>
+              <br>
+              <div class="form-group" style="
+              margin-right: 10%;
+          "> <label>Have coupon?</label>
+
+                  <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Coupon code">
+  
+                  </div>
+                  <button onclick="alert()" class="btn">Redeem</button>
+  
+              </div>
+          </div>
             <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
             <script>
                 function alert() {
@@ -340,6 +348,10 @@
           swal("Good job!", "Email Send", "success");
           e.preventDefault();
         }
+      </script>
+      <script>
+        document.getElementById("totalamaount").innerText = localStorage.getItem("totalamaount");
+        document.getElementById("totalcount").innerText = localStorage.getItem("totalnumber");
       </script>
   
       <!-- Template Main JS File -->
